@@ -1,0 +1,80 @@
+.cor-navbar {
+    background-color: #FFA6E6;
+}
+
+.logo {
+    color: #F900B3;
+}
+
+.cor-botao {
+    background-color: white;
+    height: 20px;
+}
+
+.texto-botao {
+    margin-top: -15px;
+}
+
+.container {
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.secao {
+    border-bottom: 2px solid #FFA6E6;
+}
+
+.titulo-secao {
+    color: #F900B3;
+    text-align: center;
+    
+}
+
+.card-artigos {
+    display: flex;
+}
+
+.card {
+    margin: 60px;
+}
+
+.card-cursos {
+    display: flex;
+}
+
+.rodape {
+    background-color: #C4C4C4;
+    text-align: center;
+    color: white;
+}
+
+.container {
+    
+}
+
+.login {
+    width: 70%;
+    border: 20px solid #C4C4C4;
+    background-color: #F900B3;
+    text-align: center;
+    
+}
+
+h2 {
+    font-weight: bold;
+    color: white;
+}
+
+.chamada {
+    color: white;
+}
+
+.botoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+
+
