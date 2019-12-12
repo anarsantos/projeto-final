@@ -28,12 +28,10 @@ body {
 .titulo-secao {
     color: #F900B3;
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 62px;
 }
 
 .card-artigos {
-    /* display: flex;
-    flex-direction: row; */
     justify-content: center;
 }
 
@@ -110,12 +108,20 @@ h2 {
     color: white;
 }
 
-/* @media (min-width:320px) {
-    .card-artigos {
-        flex-direction: column;
-        justify-content: center;
+@media (max-width: 425px) {
+    .login {
+        width: 100%;
     }
-} */
+}
 
+@media (max-width: 375px) {
+    .link__cadastro {
+        padding: 10px;
+    }
+}
 
-
+@media (max-width: 320px) {
+    h2 {
+        font-size: 1.7rem;
+    }
+}
