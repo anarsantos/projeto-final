@@ -44,6 +44,10 @@ body {
 .card-text {
     text-decoration: none;
     color: black;
+    height: 50px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .card {

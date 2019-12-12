@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sofia</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light cor-navbar">
+        <h4 class="logo">Sofia</h4>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <button type="button" class="btn btn-sm ml-1 cor-botao type=" submit">
+                        <a class="nav-link texto-botao" href="#">Home</a>
+                    </button>
+                </li>
+                <li class="nav-item active">
+                    <button type="button" class="btn btn-sm ml-1 cor-botao type=" submit">
+                        <a class="nav-link texto-botao" href="#">Quem somos</a>
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <button type="button" class="btn btn-sm mx-1 cor-botao type=" submit">
+                        <a class="nav-link texto-botao" href="#">Cursos/Eventos</a>
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <button type="button" class="btn btn-sm mx-1 cor-botao type=" submit">
+                        <a class="nav-link texto-botao" href="#">Login</a></button>
+
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+
+        <div class="secao">
+            <h3 class="titulo-secao">Fomulário</h3>
+
+            <div class="container">
+                <form action="">
+                    <p>
+                        <label for="cNome">Nome completo</label>
+                        <input type="text" name="tNome" id="cNome" placeholder="Nome completo">
+                    </p>
+                    <p>
+                        <label for="cEmail">E-mail para contato</label>
+                        <input type="text" name="tEmail" id="cEmail" placeholder="nome@exemplo.com">
+                    </p>
+                    <p>
+                        <label for="cPessoa">Professor/Aluno</label>
+                        <select name="tPessoa" id="cPessoa">
+                            <option value=""></option>
+                            <option value="professor">Professor</option>
+                            <option value="aluno">Aluno</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="cDisciplina">Matéria que leciona ou tem dúvida</label>
+                        <select name="tDisciplina" id="cDisciplina">
+                            <option value=""></option>
+                            <option value="lingua portuguesa">Língua portuguesa</option>
+                            <option value="lingua inglesa">Língua inglesa</option>
+                            <option value="matematica">Matemática</option>
+                            <option value="historia">história</option>
+                            <option value="geografia">Geografia</option>
+                            <option value="biologia">Biologia</option>
+                            <option value="quimica">Química</option>
+                            <option value="fisica">Física</option>
+                            <option value="sociologia">Sociologia</option>
+                            <option value="filosofia">Filosofia</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="cSenha">Senha</label>
+                        <input type="password" name="tSenha" id="cSenha" maxlength="8" placeholder="8 digitos">
+                    </p>
+                    <p>
+                        <label for="cConfirmar">Confirmar senha</label>
+                        <input type="password" name="tContimar" id="cConfirmar" maxlength="8">
+                    </p>
+
+                    <input type="submit" onclick="Enviar()" value="Enviar">
+
+                </form>
+            </div>
+
+
+
+        </div>
+
+
+    </div>
+
+
+    <footer class="rodape">Desenvolvido por Ana Santos</footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="./script/script.js"></script>
+
+
+</body>
+
+</html>
