@@ -22,7 +22,7 @@ body {
 
 .secao {
     border-bottom: 2px solid #FFA6E6;
-    padding: 50px;
+    padding: 50px 0;
 }
 
 .titulo-secao {
@@ -32,7 +32,8 @@ body {
 }
 
 .card-artigos {
-    display: flex;
+    /* display: flex;
+    flex-direction: row; */
     justify-content: center;
 }
 
@@ -52,10 +53,11 @@ body {
 
 .card {
     margin: 0 10px;
+    justify-content: center;
 }
 
 .card-cursos {
-    display: flex;
+    justify-content: center;
 }
 
 .imagem-card {
@@ -102,13 +104,18 @@ h2 {
     color: white;    
 }
 
-/* botão subir ao topo */
-
 .rodape {
     background-color: #C4C4C4;
     text-align: center;
     color: white;
 }
+
+/* @media (min-width:320px) {
+    .card-artigos {
+        flex-direction: column;
+        justify-content: center;
+    }
+} */
 
 
 

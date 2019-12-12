@@ -31,17 +31,17 @@
                 </li>
                 <li class="nav-item active">
                     <button type="button" class="btn btn-sm ml-1 cor-botao type=" submit">
-                        <a class="nav-link texto-botao" href="#">Quem somos</a>
+                        <a class="nav-link texto-botao" href="#quem-somos">Quem somos</a>
                     </button>
                 </li>
                 <li class="nav-item">
                     <button type="button" class="btn btn-sm mx-1 cor-botao type=" submit">
-                        <a class="nav-link texto-botao" href="#">Cursos/Eventos</a>
+                        <a class="nav-link texto-botao" href="#cursos-eventos">Cursos/Eventos</a>
                     </button>
                 </li>
                 <li class="nav-item">
                     <button type="button" class="btn btn-sm mx-1 cor-botao type=" submit">
-                        <a class="nav-link texto-botao" href="#">Login</a></button>
+                        <a class="nav-link texto-botao" href="#login-link">Login</a></button>
 
                 </li>
             </ul>
@@ -49,7 +49,7 @@
     </nav>
     <div class="container">
         <div class="secao">
-            <h3 class="titulo-secao">Quem somos</h3>
+            <h3 class="titulo-secao" id="quem-somos">Quem somos</h3>
             <p>Somos um site com conteúdo educacional. Em tempos difíceis para educação e cultura é importante que
                 tenhamos acesso ao maior número de fontes confiáveis de divulgação de pesquisa e artigos. Você
                 encontrará tanto textos para estudantes de escola regular quanto para estudantes universitários.</p>
@@ -57,19 +57,20 @@
             <p>Além de conteúdos relevantes, em nosso site temos um serviço gratuito para estudantes que precisam de
                 reforço escolar. Professores podem oferecer ajuda para aqueles alunos que não têm condições de pagar
                 aulas particulares.</p>
-            <p>Professor, <a href="">cadastre-se</a>, faça seu <a href="">login</a> e ofeça ajuda a quem precisa.
+            <p>Professor, <a href="./pages/formulario/formulario.html" target="_blank">cadastre-se</a>, faça seu <a href="#login-link">login</a> e ofeça ajuda a quem precisa.
                 Estudante procure um
                 dos nossos professores para auxiliá-lo nas matérias com mais dificuldade.</p>
         </div>
+
         <div class="secao">
             <h3 class="titulo-secao">Artigos</h3>
 
-            <div class="card-artigos">
+            <div class="card-artigos row">
 
-                <div class="card" style="width: 25rem;">
+                <div class="card col-sm-11 col-md-5">
                     <img class="card-img-top" src="./img/educacao1.jpg" alt="Imagem de capa do card">
                     <div class="card-body">
-                        <a href="#">
+                        <a href="./pages/artigos/artigos.html" target="_blank">
                             <h4 class="card-title">Dicas rápidas para regra de três composta</h4>
                         </a>
 
@@ -86,10 +87,10 @@
                     </div>
                 </div>
 
-                <div class="card" style="width: 25rem;">
+                <div class="card col col-sm-11 col-md-5">
                     <img class="card-img-top" src="./img/educacao2.jpg" alt="Imagem de capa do card">
                     <div class="card-body">
-                        <a href="#">
+                        <a href="./pages/artigos/artigos.html" target="_blank">
                             <h4 class="card-title">Nunca mais erre colocação pronominal, truques infalíveis!</h4>
                         </a>
 
@@ -110,12 +111,13 @@
 
 
         </div>
+
         <div class="secao">
-            <h3 class="titulo-secao">Cursos/Eventos</h3>
+            <h3 class="titulo-secao" id="cursos-eventos">Cursos/Eventos</h3>
 
-            <div class="card-cursos">
+            <div class="card-cursos row">
 
-                <div class="card" style="width: 30rem;">
+                <div class="card col-sm-11 col-md-3">
                     <img class="card-img-top imagem-card" src="./img/reprograma.png" alt="Imagem de capa do card">
                     <div class="card-body">
                         <h5 class="card-title">{reprograma}</h5>
@@ -126,7 +128,7 @@
                     </div>
                 </div>
 
-                <div class="card" style="width: 30rem;">
+                <div class="card col-sm-11 col-md-3">
                     <img class="card-img-top imagem-card" src="./img/projetoefall.png" alt="Imagem de capa do card">
                     <div class="card-body">
                         <h5 class="card-title">English for all</h5>
@@ -137,7 +139,7 @@
                     </div>
                 </div>
 
-                <div class="card" style="width: 30rem;">
+                <div class="card col-sm-11 col-md-3">
                     <img class="card-img-top imagem-card" src="./img/sympla-eventos-gratis.png"
                         alt="Imagem de capa do card">
                     <div class="card-body">
@@ -155,20 +157,19 @@
         </div>
 
         <div class="container">
-            <section class="login">
+            <section class="login" id="login-link">
 
 
                 <h2>Quer ajudar a propagar conhecimento?</h2>
                 <p class="chamada">Vodê pode ser um voluntário e ajudar quem precisa do seu saber!</p>
                 <div class="login__input">
                     <label class="login__cabecalho" for="">E-mail</label>
-                    <input class="caixa" type="text">
+                    <input id="input-email" class="caixa" type="email">
                     <label class="login__cabecalho" for="">Senha</label>
-                    <input class="caixa" type="text">
-                    <button class="caixa">Enviar</button>
+                    <input id="input-senha" class="caixa" type="password" maxlength="8">
+                    <button id = 'btn' class="caixa">Enviar</button>
                 </div>
-                <p class="link__cadastro">Ainda não tem cadastro? <a href="#" target="_blank" rel="">Clique aqui</a> e
-                    faça agora! É rápido e fácil!</p>
+                <p class="link__cadastro">Ainda não tem cadastro? <a href="./pages/formulario/formulario.html" target="_blank" rel="">Clique aqui</a> e faça agora! É rápido e fácil!</p>
 
             </section>
         </div>
@@ -184,7 +185,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
         integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
-
+    <script src="./pages/formulario/script/loginHome.js"></script>
 
 </body>
 
