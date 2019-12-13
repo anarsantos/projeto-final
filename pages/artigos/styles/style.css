@@ -2,8 +2,8 @@
     background-color: #FFA6E6;
 }
 
-.logo {
-    color: #F900B3;
+.navbar img {
+    width: 10rem;
 }
 
 .cor-botao {
@@ -39,4 +39,10 @@ body {
     background-color: #C4C4C4;
     text-align: center;
     color: white;
+}
+
+@media (max-width: 375px) {
+    .secao {
+        padding: 10px;
+    }
 }
